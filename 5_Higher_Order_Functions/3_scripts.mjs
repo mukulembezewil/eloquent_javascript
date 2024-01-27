@@ -1877,6 +1877,7 @@ const SCRIPTS = [
 ];
 
 export { SCRIPTS };
+
 // This below makes sure the data is exported in node.js but as Common JS —
 // `require('./path/to/scripts.js')` will get you the array.
 /*if (
@@ -1886,4 +1887,13 @@ export { SCRIPTS };
 )
 	module.exports = SCRIPTS;
 if (typeof global != 'undefined' && !global.SCRIPTS) global.SCRIPTS = SCRIPTS;
+*/
+
+/*
+NOTE: Use of ES module loading.
+(node:94110) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+
+Here since we have no package json we opted to give the relevant files extension .mjs.
+
+Renaming your file from '3_scripts.js' to '3_scripts.mjs' tells Node.js to recognize it as an ECMAScript module.
 */
