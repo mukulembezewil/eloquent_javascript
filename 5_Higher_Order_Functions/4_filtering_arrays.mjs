@@ -62,3 +62,5 @@ Both approaches achieve similar results, which is filtering an array based on a 
 
 The choice between the two approaches depends on factors such as code readability, reusability, and personal preference. Using the built-in `filter` method directly on an array is generally more idiomatic and may be more familiar to other developers. However, defining a custom `filter` function can provide more flexibility and abstraction, allowing you to customize the filtering process according to your specific requirements.
 */
+
+console.log(SCRIPTS.filter((s) => s.direction == 'ttb'));
