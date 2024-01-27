@@ -10,3 +10,6 @@ console.log(reverseArray(arrBee));
 // console.log(arrCee);
 
 // console.log(arrBee.reverse());
+
+const larche = arrBee.filter((num) => num % 2 === 0);
+console.log(larche);
