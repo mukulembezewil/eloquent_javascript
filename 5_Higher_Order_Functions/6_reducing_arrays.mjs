@@ -95,3 +95,15 @@ In the above example, we use reduce to calculate the sum of all elements in the 
 That's a basic overview of the reduce method in JavaScript! It's a fundamental tool in functional programming and can greatly simplify complex array operations.
 
 */
+
+console.log('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^');
+// Consider how we would have written the previous example (finding the biggest script) without higher-order functions. The code is not that much worse.
+
+let biggest = null;
+for (let script of SCRIPTS) {
+	if (biggest == null || characterCount(biggest) < characterCount(script)) {
+		biggest = script;
+	}
+}
+
+console.log(biggest);
